@@ -1,0 +1,71 @@
+.contact {
+  padding: 60px 20px;
+  background: #fff;
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #4caf50;
+}
+
+.contact p {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  font-size: 1.1rem;
+  margin: 5px 0;
+}
+
+/* Social links */
+.social-links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 2px solid #4caf50;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background-color: #4caf50;
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* Fade-in animation */
+.fade-in {
+  animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .social-links {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
